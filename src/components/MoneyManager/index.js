@@ -190,7 +190,7 @@ class MoneyManager extends Component {
                   </li>
                   {transactionsList.map(eachTransaction => (
                     <TransactionItem
-                      key={eachTransaction.id}
+                      key={eachTransaction.id} // Add key prop
                       transactionDetails={eachTransaction}
                       deleteTransaction={this.deleteTransaction}
                     />
